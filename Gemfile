@@ -17,9 +17,16 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
-  gem 'pry-byebug'
   gem 'spring'
   gem 'web-console', '~> 2.0'
+end
+
+group :development, :test do
+  gem 'factory_bot_rails'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end
 
 group :production do
