@@ -1,7 +1,8 @@
 Feature: User wants to login
-    As a user
-    In order to log in to existing account
-    I would like to see a login button that takes me to a login page with a login form
+As a user
+In order to access my existing account
+I would like to see a login button that takes me to a login page,
+with a login form and I would like to be able to fill in the login form and click login
 
 Background: 
 Given the following user exist in the database
