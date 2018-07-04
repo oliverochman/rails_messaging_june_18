@@ -8,4 +8,4 @@ end
 
 Then("I should see {string} message") do |string|
     expect(page).to have_content string
-  end
+end
