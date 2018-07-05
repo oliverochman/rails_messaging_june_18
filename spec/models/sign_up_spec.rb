@@ -1,4 +1,10 @@
 require 'spec_helper.rb'
 require 'rails_helper'
 
-describe  do
+#RSpec.describe User, type: :model do
+#    describe 'DB table' do
+#      it { is_expected.to have_db_column :name}
+#      it { is_expected.to have_db_column :email }
+#      it { is_expected.to have_db_column :password }
+#    end
+#end
