@@ -1,6 +1,6 @@
 When("I click on {string}") do |link|
     click_on link
-    end
+end
   
 Then("I should be on the {string} page") do |path|
     if path == 'Login'
