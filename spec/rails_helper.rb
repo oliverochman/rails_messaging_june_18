@@ -1,7 +1,7 @@
 require 'coveralls'
 Coveralls.wear_merged!('rails')
 require 'spec_helper'
-require 'support/factory_bot'
+#require 'support/factory_bot'
 
 
 ENV['RAILS_ENV'] ||= 'test'
