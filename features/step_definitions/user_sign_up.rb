@@ -9,9 +9,9 @@ Given("I visit the sign up page") do
 end
 
 When("I am at the sign up page") do
-    if path == 'Sign up'
-        expect(page.current_path).to eq registration_path
-    end
+  if path == 'Sign up'
+      expect(page.current_path).to eq registration_path
+  end
 end
 
 When("I click {string} button") do |button|

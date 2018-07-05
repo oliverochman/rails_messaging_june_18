@@ -4,9 +4,9 @@ Feature: User want to sign up for personal account
     I would like to able to sign up for a private account
 
     Background:
-        Given the following user exists
-        | email           | name      | password       | password_confirmation|
-        | random@test.com | randomguy | my-password    | my-password          |
+    Given the following user exists
+    | email           | name      | password       | password_confirmation|
+    | random@test.com | randomguy | my-password    | my-password          |
     
     Scenario: Sign up for account
         Given I visit the sign up page
