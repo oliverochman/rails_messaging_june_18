@@ -14,10 +14,6 @@ When("I am at the sign up page") do
     end
 end
 
-Then("I fill in {string} with {string}") do |field_name, content_name|
-  fill_in field_name, with: content_name
-end
-
 When("I click {string} button") do |button|
   click_button button
 end
