@@ -1,8 +1,8 @@
-When("a user click on {string}") do |link|
+When("I click on {string}") do |link|
     click_on link
-end
+    end
   
-And("I should be on the {string} page") do |path|
+Then("I should be on the {string} page") do |path|
     if path == 'Login'
         expect(page.current_path).to eq new_user_session_path
     end

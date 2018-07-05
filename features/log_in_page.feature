@@ -5,14 +5,14 @@ Feature: User wants to login
 
     Background: 
     Given the following user exist in the database
-    |email|name|password|password_confirmation|
-    |random@test.com|randomguy|my-password|my-password|
+    | email           | name      | password       | password_confirmation|
+    | random@test.com | randomguy | my-password    | my-password          |
 
 
     Scenario: Log in page view
         When I visit the site
-        Then I click on 'Login'
-        And I should be on the "Login" page
+        And I click on 'Login'
+        Then I should be on the "Login" page
         And I fill in "Email" with "random@test.com"
         And I fill in "Password" with "my-password"
         And I click on "Log in"
