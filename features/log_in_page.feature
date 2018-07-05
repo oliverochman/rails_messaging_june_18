@@ -17,3 +17,5 @@ Feature: User wants to login
         And I fill in "Password" with "my-password"
         And I click on "Log in"
         Then I should see "Signed in successfully."
+
+    
