@@ -15,5 +15,4 @@ Feature: User want to sign up for personal account
         And I fill in 'Password' with 'my-password'
         And I fill in 'Password confirmation' with 'my-password'
         And I click 'Create' button
-        And show me the page
         Then I should see "Welcome! You have signed up successfully."
