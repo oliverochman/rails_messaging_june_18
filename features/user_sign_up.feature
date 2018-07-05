@@ -4,15 +4,16 @@ Feature: User want to sign up for personal account
     I would like to able to sign up for a private account
 
     Background:
-        Given the following user exist in the database
+        Given the following user exists
         | email           | name      | password       | password_confirmation|
         | random@test.com | randomguy | my-password    | my-password          |
     
     Scenario: Sign up for account
         Given I visit the sign up page
-        When I fill in 'name' with 'RandomGuy'
-        And I fill in 'Email' with 'random@test.com'
+        When I fill in 'Name' with 'Pablo'
+        And I fill in 'Email' with 'anotherrandomrandom@test.com'
         And I fill in 'Password' with 'my-password'
         And I fill in 'Password confirmation' with 'my-password'
         And I click 'Create' button
-        Then my account is created
+        And show me the page
+        Then I should see "Welcome! You have signed up successfully."

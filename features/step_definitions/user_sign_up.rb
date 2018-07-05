@@ -1,4 +1,4 @@
-Given("I will fill in the following") do |table|
+Given("the following user exists") do |table|
   table.hashes.each do |user|
     User.create(user)
   end
@@ -18,8 +18,8 @@ Then("I fill in {string} with {string}") do |field_name, content_name|
   fill_in field_name, with: content_name
 end
 
-When("I click {string} button") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+When("I click {string} button") do |button|
+  click_button button
 end
 
 Then("my account is created") do
