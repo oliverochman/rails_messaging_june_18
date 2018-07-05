@@ -21,7 +21,3 @@ end
 When("I click {string} button") do |button|
   click_button button
 end
-
-Then("my account is created") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
