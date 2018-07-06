@@ -6,6 +6,6 @@ Then("I should see {string} link") do |link_name|
     expect(page).to have_link link_name
 end
 
-Then("I should see {string} message") do |application_name|
-    expect(page).to have_content application_name
+Then("I should see {string} message") do |text|
+    expect(page).to have_content text
 end
