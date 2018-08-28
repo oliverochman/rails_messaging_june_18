@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   namespace :api do
-    mount_devise_token_auth_for 'User', at: 'auth', skip: [:omniauth_callbacks], controllers: {
+    mount_devise_token_auth_for 'User', at: 'auth', controllers: {
       sessions: 'api/sessions',
-      registrations: 'api/registrations'
+      registrations: 'api/registrations',
+      omniauth_callbacks: 'api/omniauth_callbacks'
     }
   end
 

@@ -4,7 +4,7 @@ module OmniAuthFixtures
       uid: 10205522242159630,
       info:
           {email: 'thomas@craftacademy.se',
-           name: 'Thomas Ochman',
+           name: 'Thomas',
            image: 'http://graph.facebook.com/v2.6/10205522242159630/picture'},
       credentials:
           {token:
@@ -13,6 +13,6 @@ module OmniAuthFixtures
            expires: true},
       extra:
           {raw_info:
-               {name: 'Thomas Ochman', email: 'thomas@craftacademy.se', id: '10205522242159630'}}}
+               {name: 'Thomas', email: 'thomas@craftacademy.se', id: '10205522242159630'}}}
    end
  end
