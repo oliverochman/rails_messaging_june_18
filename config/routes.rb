@@ -5,6 +5,13 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
+  namespace :api do
+    mount_devise_token_auth_for 'User', at: 'auth', skip: [:omniauth_callbacks], controllers: {
+      sessions: 'api/sessions',
+      registrations: 'api/registrations'
+    }
+  end
+
   # mailbox folder routes
   get "mailbox/inbox" => "mailbox#inbox", as: :mailbox_inbox
   get "mailbox/sent" => "mailbox#sent", as: :mailbox_sent
