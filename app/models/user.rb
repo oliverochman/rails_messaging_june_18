@@ -8,8 +8,6 @@ class User < ApplicationRecord
 
   devise :omniauthable, omniauth_providers: [:facebook]
 
-  validates :name, length: { maximum: 10 }
-  validates :name, presence: true
   validates :password, presence: true
   validates_uniqueness_of :name
 
